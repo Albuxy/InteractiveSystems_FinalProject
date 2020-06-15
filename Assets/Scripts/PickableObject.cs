@@ -6,6 +6,7 @@ public class PickableObject : MonoBehaviour
 {
    public bool isPickable = true;
 
+   //Enter to the Collider zone of the hand
    private void OnTriggerEnter(Collider other)
    {
 	if (other.tag == "PlayerInteractionZone")
@@ -14,6 +15,7 @@ public class PickableObject : MonoBehaviour
 	}
    }
 
+   
    private void OnTriggerExit(Collider other)
    {
 	if (other.tag == "PlayerInteractionZone")
